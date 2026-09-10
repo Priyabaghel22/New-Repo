@@ -1,34 +1,29 @@
-import random 
+people_list=[]
+class person:
+ def _init_(self,name,age,address,course,city):
+    self.name = name
+    self.age = age
+    self.address = address
+    self.course = course
+    self.city = city 
 
-user1  = "Priya"
+    for i in range(5):
+        name = input("enter your name: ")
+        age = int(input("enter your age: "))
+        address = input("enter your address: ")
+        course = input("enter your course: ")
+        city = input("enter your city:")
 
-user1 = int(input("enter a number between 1 and 10:"))
-
-if 1<=user1<=10:
-    print("Valid input!")
-else:
-    print("Invalid input!")
-
-user2 = "Riya"
-user2 = int(input("enter a number between 1 and 10:"))
-
-if 1<=user2<=10:
-    print("Valid input!")
-else:
-    print("Invalid input!")
+        person =person(name, age, address, course,city)
+        person.append(person)
 
 
-random_number=random.randint(1,10)
-print("random number is:", random_number)
 
-answer1 = user1*random_number
-answer2 = user2 *random_number
+number = []
 
-print("priya answer is ",answer1)
-print("riya answer is ",answer2)
+for i in range(8):
+    num = int(input("enter the number"))
+    number.append(num*2)
+    print(number)
 
-if answer1 == answer2:
-    print("pass")
-else:
-    print("fail")
     
